@@ -16,9 +16,14 @@
       "js": ["addskipper.js"]
     }
   ],
+
+  "permissions": [
+    "activeTab"
+  ],
+
   "browser_action": {
     "default_icon": "icons/temp-32.png",
-    "default_title": "Beastify",
-    "default_popup": "popup/choose_beast.html"
+    "default_title": "Activate",
+    "default_popup": "popup/popup.html"
   }
 }
