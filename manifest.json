@@ -1,5 +1,4 @@
 {
-
   "manifest_version": 2,
   "name": "Addskipper",
   "version": "1.0",
@@ -10,20 +9,13 @@
     "48": "icons/border-48.png"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.youtube.com/*"],
-      "js": ["addskipper.js"]
-    }
-  ],
-
   "permissions": [
     "activeTab"
   ],
 
   "browser_action": {
-    "default_icon": "icons/temp-32.png",
-    "default_title": "Activate",
-    "default_popup": "popup/popup.html"
+  "default_icon": "icons/temp-32.png",
+  "default_title": "Addskipper",
+  "default_popup": "popup/popup.html"
   }
 }
