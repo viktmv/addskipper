@@ -1,7 +1,6 @@
-let toggle = document.querySelector('.toggle')
+let showbtn = document.querySelector('.showbtn')
+let hidebtn = document.querySelector('.hidebtn')
 
-let execute = browser.tabs.executeScript({
-  file: "../skip.js"
-});
 
-toggle.addEventListener('click', execute)
+showbtn.addEventListener('click', () => browser.tabs.executeScript({file: "../skip.js"}))
+hidebtn.addEventListener('click', () => browser.tabs.executeScript({file: "../cleanup.js"}))
