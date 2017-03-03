@@ -1,6 +1,8 @@
-let showbtn = document.querySelector('.showbtn')
-let hidebtn = document.querySelector('.hidebtn')
+(function() {
+    let showbtn = document.querySelector('.showbtn')
+    let hidebtn = document.querySelector('.hidebtn')
 
 
-showbtn.addEventListener('click', () => browser.tabs.executeScript({file: "../skip.js"}))
-hidebtn.addEventListener('click', () => browser.tabs.executeScript({file: "../cleanup.js"}))
+    showbtn.addEventListener('click', () => browser.tabs.executeScript({file: "../skip.js"}))
+    hidebtn.addEventListener('click', () => browser.tabs.executeScript({file: "../cleanup.js"}))
+})()
